@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.4.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.4.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_1db2f860f73e4b92b72aa94c919d97b2 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_1db2f860f73e4b92b72aa94c919d97b2" ></div>
+        
+</body>
+<script>    
+    
+            var map_1db2f860f73e4b92b72aa94c919d97b2 = L.map(
+                "map_1db2f860f73e4b92b72aa94c919d97b2",
+                {
+                    center: [42.0, 13.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 6,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_c8fab2294d3f45f8a5d7ef7fda38def0 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_1db2f860f73e4b92b72aa94c919d97b2);
+        
+    
+            var marker_9597b8a5d1314e7b832b6751329fa96a = L.marker(
+                [40.23830032348633, 18.138900756835938],
+                {}
+            ).addTo(map_1db2f860f73e4b92b72aa94c919d97b2);
+        
+    
+        var popup_56f182117d9748d0a0516a10ce14fbcc = L.popup({"maxWidth": 2650});
+
+        
+            var html_621301a6833f4097b246bd083566bc36 = $(`<div id="html_621301a6833f4097b246bd083566bc36" style="width: 100.0%; height: 100.0%;"><b>Temps d'observation : 2014-6-15 12:55</b></br> <b>Station : LIBN</b></br> <b>lon : 18.14</b></br> <b>lat : 40.24</b></br> <b>Température (fahrenheit) : 68.0</b></br>                          <b>Humidité relative (%) : 93.97</b></br> <b>Direction du vent : 80.0</b></br> <b>Vitesse du vent (mille marin) : 9.0</b></br> <b>Visibilité (mile) : 6.21</b></br></div>`)[0];
+            popup_56f182117d9748d0a0516a10ce14fbcc.setContent(html_621301a6833f4097b246bd083566bc36);
+        
+
+        marker_9597b8a5d1314e7b832b6751329fa96a.bindPopup(popup_56f182117d9748d0a0516a10ce14fbcc)
+        ;
+
+        
+    
+    
+            var marker_50dbcdbfbb674d1cb4c084586f5005ca = L.marker(
+                [40.7661018371582, 16.935300827026367],
+                {}
+            ).addTo(map_1db2f860f73e4b92b72aa94c919d97b2);
+        
+    
+        var popup_d31c4ee7eb184ff6bcc0ae7991542258 = L.popup({"maxWidth": 2650});
+
+        
+            var html_d0d3c1c7844f4c8a824dc810a02545ba = $(`<div id="html_d0d3c1c7844f4c8a824dc810a02545ba" style="width: 100.0%; height: 100.0%;"><b>Temps d'observation : 2014-6-15 12:55</b></br> <b>Station : LIBV</b></br> <b>lon : 16.94</b></br> <b>lat : 40.77</b></br> <b>Température (fahrenheit) : 69.8</b></br>                          <b>Humidité relative (%) : 94.01</b></br> <b>Direction du vent : 70.0</b></br> <b>Vitesse du vent (mille marin) : 9.0</b></br> <b>Visibilité (mile) : 4.35</b></br></div>`)[0];
+            popup_d31c4ee7eb184ff6bcc0ae7991542258.setContent(html_d0d3c1c7844f4c8a824dc810a02545ba);
+        
+
+        marker_50dbcdbfbb674d1cb4c084586f5005ca.bindPopup(popup_d31c4ee7eb184ff6bcc0ae7991542258)
+        ;
+
+        
+    
+    
+            var marker_47a80630d31d43c8bd8d39a39192176c = L.marker(
+                [39.8114013671875, 18.342199325561523],
+                {}
+            ).addTo(map_1db2f860f73e4b92b72aa94c919d97b2);
+        
+    
+        var popup_b8213e0541ca4bdaaeb3e0a53a2dafe4 = L.popup({"maxWidth": 2650});
+
+        
+            var html_8db6916e6cd4429d83a389f1456df4db = $(`<div id="html_8db6916e6cd4429d83a389f1456df4db" style="width: 100.0%; height: 100.0%;"><b>Temps d'observation : 2014-6-15 12:55</b></br> <b>Station : LIBY</b></br> <b>lon : 18.34</b></br> <b>lat : 39.81</b></br> <b>Température (fahrenheit) : 73.4</b></br>                          <b>Humidité relative (%) : 78.19</b></br> <b>Direction du vent : 150.0</b></br> <b>Vitesse du vent (mille marin) : 5.0</b></br> <b>Visibilité (mile) : 3.73</b></br></div>`)[0];
+            popup_b8213e0541ca4bdaaeb3e0a53a2dafe4.setContent(html_8db6916e6cd4429d83a389f1456df4db);
+        
+
+        marker_47a80630d31d43c8bd8d39a39192176c.bindPopup(popup_b8213e0541ca4bdaaeb3e0a53a2dafe4)
+        ;
+
+        
+    
+    
+            var marker_57dd80619de142089c62fad8c27ec5f9 = L.marker(
+                [38.20000076293945, 15.550000190734863],
+                {}
+            ).addTo(map_1db2f860f73e4b92b72aa94c919d97b2);
+        
+    
+        var popup_8f1a3ef7f8f44303b0f2c44abb2db6c4 = L.popup({"maxWidth": 2650});
+
+        
+            var html_7e44907c4b3046cc8b603052066cb832 = $(`<div id="html_7e44907c4b3046cc8b603052066cb832" style="width: 100.0%; height: 100.0%;"><b>Temps d'observation : 2014-6-15 12:55</b></br> <b>Station : LICF</b></br> <b>lon : 15.55</b></br> <b>lat : 38.2</b></br> <b>Température (fahrenheit) : 78.8</b></br>                          <b>Humidité relative (%) : 69.52</b></br> <b>Direction du vent : 150.0</b></br> <b>Vitesse du vent (mille marin) : 5.0</b></br> <b>Visibilité (mile) : 6.21</b></br></div>`)[0];
+            popup_8f1a3ef7f8f44303b0f2c44abb2db6c4.setContent(html_7e44907c4b3046cc8b603052066cb832);
+        
+
+        marker_57dd80619de142089c62fad8c27ec5f9.bindPopup(popup_8f1a3ef7f8f44303b0f2c44abb2db6c4)
+        ;
+
+        
+    
+    
+            var marker_5dc34bdf9d874f25826dd7cc6a9550a8 = L.marker(
+                [36.813899993896484, 11.971099853515625],
+                {}
+            ).addTo(map_1db2f860f73e4b92b72aa94c919d97b2);
+        
+    
+        var popup_b85fa6de761e4204b116491bf484ad5c = L.popup({"maxWidth": 2650});
+
+        
+            var html_22e1c8af12bf440aa05ca81be5be6e71 = $(`<div id="html_22e1c8af12bf440aa05ca81be5be6e71" style="width: 100.0%; height: 100.0%;"><b>Temps d'observation : 2014-6-15 12:55</b></br> <b>Station : LICG</b></br> <b>lon : 11.97</b></br> <b>lat : 36.81</b></br> <b>Température (fahrenheit) : 82.4</b></br>                          <b>Humidité relative (%) : 61.81</b></br> <b>Direction du vent : 280.0</b></br> <b>Vitesse du vent (mille marin) : 6.0</b></br> <b>Visibilité (mile) : 6.21</b></br></div>`)[0];
+            popup_b85fa6de761e4204b116491bf484ad5c.setContent(html_22e1c8af12bf440aa05ca81be5be6e71);
+        
+
+        marker_5dc34bdf9d874f25826dd7cc6a9550a8.bindPopup(popup_b85fa6de761e4204b116491bf484ad5c)
+        ;
+
+        
+    
+    
+            var marker_63e3550fe61f4c1a9bf1d75336bd0d78 = L.marker(
+                [37.91419982910156, 12.491399765014648],
+                {}
+            ).addTo(map_1db2f860f73e4b92b72aa94c919d97b2);
+        
+    
+        var popup_b7efadffb6514c4bb61bcf9808f2a5ad = L.popup({"maxWidth": 2650});
+
+        
+            var html_8054d966fa044ca5aa1ca98936e3b21d = $(`<div id="html_8054d966fa044ca5aa1ca98936e3b21d" style="width: 100.0%; height: 100.0%;"><b>Temps d'observation : 2014-6-15 12:55</b></br> <b>Station : LICT</b></br> <b>lon : 12.49</b></br> <b>lat : 37.91</b></br> <b>Température (fahrenheit) : 78.8</b></br>                          <b>Humidité relative (%) : 73.95</b></br> <b>Direction du vent : 240.0</b></br> <b>Vitesse du vent (mille marin) : 7.0</b></br> <b>Visibilité (mile) : 6.21</b></br></div>`)[0];
+            popup_b7efadffb6514c4bb61bcf9808f2a5ad.setContent(html_8054d966fa044ca5aa1ca98936e3b21d);
+        
+
+        marker_63e3550fe61f4c1a9bf1d75336bd0d78.bindPopup(popup_b7efadffb6514c4bb61bcf9808f2a5ad)
+        ;
+
+        
+    
+    
+            var marker_35d863d2d78342d5b225b75467f98ae9 = L.marker(
+                [37.405601501464844, 14.918600082397461],
+                {}
+            ).addTo(map_1db2f860f73e4b92b72aa94c919d97b2);
+        
+    
+        var popup_c480380266d146d591d3087979ea7eef = L.popup({"maxWidth": 2650});
+
+        
+            var html_dba15875a87144098067fa2d8ffcc391 = $(`<div id="html_dba15875a87144098067fa2d8ffcc391" style="width: 100.0%; height: 100.0%;"><b>Temps d'observation : 2014-6-15 12:55</b></br> <b>Station : LICZ</b></br> <b>lon : 14.92</b></br> <b>lat : 37.41</b></br> <b>Température (fahrenheit) : 71.6</b></br>                          <b>Humidité relative (%) : 73.27</b></br> <b>Direction du vent : 80.0</b></br> <b>Vitesse du vent (mille marin) : 20.0</b></br> <b>Visibilité (mile) : 4.35</b></br></div>`)[0];
+            popup_c480380266d146d591d3087979ea7eef.setContent(html_dba15875a87144098067fa2d8ffcc391);
+        
+
+        marker_35d863d2d78342d5b225b75467f98ae9.bindPopup(popup_c480380266d146d591d3087979ea7eef)
+        ;
+
+        
+    
+    
+            var marker_5aa743ce0e9845c584cc9bf2442fa23a = L.marker(
+                [39.93069839477539, 9.713199615478516],
+                {}
+            ).addTo(map_1db2f860f73e4b92b72aa94c919d97b2);
+        
+    
+        var popup_94f68c65509c49eebc6bd64d98378f54 = L.popup({"maxWidth": 2650});
+
+        
+            var html_fc6aa9969e9e49bca8e0279a9c84ec98 = $(`<div id="html_fc6aa9969e9e49bca8e0279a9c84ec98" style="width: 100.0%; height: 100.0%;"><b>Temps d'observation : 2014-6-15 12:55</b></br> <b>Station : LIEB</b></br> <b>lon : 9.71</b></br> <b>lat : 39.93</b></br> <b>Température (fahrenheit) : 84.2</b></br>                          <b>Humidité relative (%) : 65.95</b></br> <b>Direction du vent : 120.0</b></br> <b>Vitesse du vent (mille marin) : 8.0</b></br> <b>Visibilité (mile) : 6.21</b></br></div>`)[0];
+            popup_94f68c65509c49eebc6bd64d98378f54.setContent(html_fc6aa9969e9e49bca8e0279a9c84ec98);
+        
+
+        marker_5aa743ce0e9845c584cc9bf2442fa23a.bindPopup(popup_94f68c65509c49eebc6bd64d98378f54)
+        ;
+
+        
+    
+    
+            var marker_f238f22a7851462fb324b8830eec8784 = L.marker(
+                [39.346099853515625, 8.967499732971191],
+                {}
+            ).addTo(map_1db2f860f73e4b92b72aa94c919d97b2);
+        
+    
+        var popup_67319d37ef734af2b0a23a2b86900dd9 = L.popup({"maxWidth": 2650});
+
+        
+            var html_c59fe06887274e2eb5ba8c14a0ab2821 = $(`<div id="html_c59fe06887274e2eb5ba8c14a0ab2821" style="width: 100.0%; height: 100.0%;"><b>Temps d'observation : 2014-6-15 12:55</b></br> <b>Station : LIED</b></br> <b>lon : 8.97</b></br> <b>lat : 39.35</b></br> <b>Température (fahrenheit) : 86.0</b></br>                          <b>Humidité relative (%) : 35.25</b></br> <b>Direction du vent : 310.0</b></br> <b>Vitesse du vent (mille marin) : 16.0</b></br> <b>Visibilité (mile) : 6.21</b></br></div>`)[0];
+            popup_67319d37ef734af2b0a23a2b86900dd9.setContent(html_c59fe06887274e2eb5ba8c14a0ab2821);
+        
+
+        marker_f238f22a7851462fb324b8830eec8784.bindPopup(popup_67319d37ef734af2b0a23a2b86900dd9)
+        ;
+
+        
+    
+    
+            var marker_002dc1eb1ae04b72932c2c1fa49d7a03 = L.marker(
+                [45.03329849243164, 7.7316999435424805],
+                {}
+            ).addTo(map_1db2f860f73e4b92b72aa94c919d97b2);
+        
+    
+        var popup_a3043f78971b4754a94ffac10e84fe64 = L.popup({"maxWidth": 2650});
+
+        
+            var html_ec56ac95b39b4fd9837b2810c9c1ca3d = $(`<div id="html_ec56ac95b39b4fd9837b2810c9c1ca3d" style="width: 100.0%; height: 100.0%;"><b>Temps d'observation : 2014-6-15 12:55</b></br> <b>Station : LIMK</b></br> <b>lon : 7.73</b></br> <b>lat : 45.03</b></br> <b>Température (fahrenheit) : 55.4</b></br>                          <b>Humidité relative (%) : 100.0</b></br> <b>Direction du vent : 340.0</b></br> <b>Vitesse du vent (mille marin) : 12.0</b></br> <b>Visibilité (mile) : 0.06</b></br></div>`)[0];
+            popup_a3043f78971b4754a94ffac10e84fe64.setContent(html_ec56ac95b39b4fd9837b2810c9c1ca3d);
+        
+
+        marker_002dc1eb1ae04b72932c2c1fa49d7a03.bindPopup(popup_a3043f78971b4754a94ffac10e84fe64)
+        ;
+
+        
+    
+    
+            var marker_7140951c304b4dd79f65945249d8566f = L.marker(
+                [44.90919876098633, 9.727800369262695],
+                {}
+            ).addTo(map_1db2f860f73e4b92b72aa94c919d97b2);
+        
+    
+        var popup_c76872c9fa4a460ead95c2e14650e497 = L.popup({"maxWidth": 2650});
+
+        
+            var html_8140a02f18b840cda12befbb72705410 = $(`<div id="html_8140a02f18b840cda12befbb72705410" style="width: 100.0%; height: 100.0%;"><b>Temps d'observation : 2014-6-15 12:55</b></br> <b>Station : LIMS</b></br> <b>lon : 9.73</b></br> <b>lat : 44.91</b></br> <b>Température (fahrenheit) : 71.6</b></br>                          <b>Humidité relative (%) : 68.75</b></br> <b>Direction du vent : 120.0</b></br> <b>Vitesse du vent (mille marin) : 10.0</b></br> <b>Visibilité (mile) : 6.21</b></br></div>`)[0];
+            popup_c76872c9fa4a460ead95c2e14650e497.setContent(html_8140a02f18b840cda12befbb72705410);
+        
+
+        marker_7140951c304b4dd79f65945249d8566f.bindPopup(popup_c76872c9fa4a460ead95c2e14650e497)
+        ;
+
+        
+    
+    
+            var marker_630cefd7418a47d5acf4f985da044c2b = L.marker(
+                [44.471900939941406, 9.928600311279297],
+                {}
+            ).addTo(map_1db2f860f73e4b92b72aa94c919d97b2);
+        
+    
+        var popup_319c0b1e336049bdba5509ebfc6ac945 = L.popup({"maxWidth": 2650});
+
+        
+            var html_c961d7fe4455465b95a0349a6efdb379 = $(`<div id="html_c961d7fe4455465b95a0349a6efdb379" style="width: 100.0%; height: 100.0%;"><b>Temps d'observation : 2014-6-15 12:55</b></br> <b>Station : LIMT</b></br> <b>lon : 9.93</b></br> <b>lat : 44.47</b></br> <b>Température (fahrenheit) : 53.6</b></br>                          <b>Humidité relative (%) : 81.87</b></br> <b>Direction du vent : 20.0</b></br> <b>Vitesse du vent (mille marin) : 18.0</b></br> <b>Visibilité (mile) : 0.0</b></br></div>`)[0];
+            popup_319c0b1e336049bdba5509ebfc6ac945.setContent(html_c961d7fe4455465b95a0349a6efdb379);
+        
+
+        marker_630cefd7418a47d5acf4f985da044c2b.bindPopup(popup_319c0b1e336049bdba5509ebfc6ac945)
+        ;
+
+        
+    
+    
+            var marker_98355a1d93f74f49a83ad848793a7405 = L.marker(
+                [43.95719909667969, 8.169699668884277],
+                {}
+            ).addTo(map_1db2f860f73e4b92b72aa94c919d97b2);
+        
+    
+        var popup_d25b51ebe3e246509933a50b9c449db5 = L.popup({"maxWidth": 2650});
+
+        
+            var html_0418412d1bb846e797e1998313853784 = $(`<div id="html_0418412d1bb846e797e1998313853784" style="width: 100.0%; height: 100.0%;"><b>Temps d'observation : 2014-6-15 12:55</b></br> <b>Station : LIMU</b></br> <b>lon : 8.17</b></br> <b>lat : 43.96</b></br> <b>Température (fahrenheit) : 69.8</b></br>                          <b>Humidité relative (%) : 60.21</b></br> <b>Direction du vent : 360.0</b></br> <b>Vitesse du vent (mille marin) : 15.0</b></br> <b>Visibilité (mile) : 6.21</b></br></div>`)[0];
+            popup_d25b51ebe3e246509933a50b9c449db5.setContent(html_0418412d1bb846e797e1998313853784);
+        
+
+        marker_98355a1d93f74f49a83ad848793a7405.bindPopup(popup_d25b51ebe3e246509933a50b9c449db5)
+        ;
+
+        
+    
+    
+            var marker_ea5c4105f2424be7a0d2e1634da00c71 = L.marker(
+                [44.25, 7.800000190734863],
+                {}
+            ).addTo(map_1db2f860f73e4b92b72aa94c919d97b2);
+        
+    
+        var popup_122f637cd28c49dbbd07d495096362cb = L.popup({"maxWidth": 2650});
+
+        
+            var html_c641f780f49e438d95d0253573f7f5d0 = $(`<div id="html_c641f780f49e438d95d0253573f7f5d0" style="width: 100.0%; height: 100.0%;"><b>Temps d'observation : 2014-6-15 12:55</b></br> <b>Station : LIMY</b></br> <b>lon : 7.8</b></br> <b>lat : 44.25</b></br> <b>Température (fahrenheit) : 53.6</b></br>                          <b>Humidité relative (%) : 76.5</b></br> <b>Direction du vent : 330.0</b></br> <b>Vitesse du vent (mille marin) : 11.0</b></br> <b>Visibilité (mile) : 0.19</b></br></div>`)[0];
+            popup_122f637cd28c49dbbd07d495096362cb.setContent(html_c641f780f49e438d95d0253573f7f5d0);
+        
+
+        marker_ea5c4105f2424be7a0d2e1634da00c71.bindPopup(popup_122f637cd28c49dbbd07d495096362cb)
+        ;
+
+        
+    
+    
+            var marker_5bdcfe23494d4b4c9b5f398c626927ea = L.marker(
+                [44.22890090942383, 12.291899681091309],
+                {}
+            ).addTo(map_1db2f860f73e4b92b72aa94c919d97b2);
+        
+    
+        var popup_0af1077cfe1c4d7bbc0ec7e729591d10 = L.popup({"maxWidth": 2650});
+
+        
+            var html_152ab6fccdcf47f5844a6f9544c1ea95 = $(`<div id="html_152ab6fccdcf47f5844a6f9544c1ea95" style="width: 100.0%; height: 100.0%;"><b>Temps d'observation : 2014-6-15 12:55</b></br> <b>Station : LIPC</b></br> <b>lon : 12.29</b></br> <b>lat : 44.23</b></br> <b>Température (fahrenheit) : 71.6</b></br>                          <b>Humidité relative (%) : 73.27</b></br> <b>Direction du vent : 90.0</b></br> <b>Vitesse du vent (mille marin) : 11.0</b></br> <b>Visibilité (mile) : 6.21</b></br></div>`)[0];
+            popup_0af1077cfe1c4d7bbc0ec7e729591d10.setContent(html_152ab6fccdcf47f5844a6f9544c1ea95);
+        
+
+        marker_5bdcfe23494d4b4c9b5f398c626927ea.bindPopup(popup_0af1077cfe1c4d7bbc0ec7e729591d10)
+        ;
+
+        
+    
+    
+            var marker_8830093c8aa545aeb953839d3ab1a86e = L.marker(
+                [44.81560134887695, 11.612500190734863],
+                {}
+            ).addTo(map_1db2f860f73e4b92b72aa94c919d97b2);
+        
+    
+        var popup_c7b0ad3d5ffb4745838dfb848656ed2d = L.popup({"maxWidth": 2650});
+
+        
+            var html_290514e4881747688ddb18a066111a41 = $(`<div id="html_290514e4881747688ddb18a066111a41" style="width: 100.0%; height: 100.0%;"><b>Temps d'observation : 2014-6-15 12:55</b></br> <b>Station : LIPF</b></br> <b>lon : 11.61</b></br> <b>lat : 44.82</b></br> <b>Température (fahrenheit) : 73.4</b></br>                          <b>Humidité relative (%) : 60.67</b></br> <b>Direction du vent : 60.0</b></br> <b>Vitesse du vent (mille marin) : 5.0</b></br> <b>Visibilité (mile) : 6.21</b></br></div>`)[0];
+            popup_c7b0ad3d5ffb4745838dfb848656ed2d.setContent(html_290514e4881747688ddb18a066111a41);
+        
+
+        marker_8830093c8aa545aeb953839d3ab1a86e.bindPopup(popup_c7b0ad3d5ffb4745838dfb848656ed2d)
+        ;
+
+        
+    
+    
+            var marker_d6d912747acb456bac7faf06c5c70816 = L.marker(
+                [45.42060089111328, 10.281399726867676],
+                {}
+            ).addTo(map_1db2f860f73e4b92b72aa94c919d97b2);
+        
+    
+        var popup_a5141700f1974f0aa419a6fb0167ae5c = L.popup({"maxWidth": 2650});
+
+        
+            var html_80ab63ce7d9a4d7e8f8eaaf08417c78f = $(`<div id="html_80ab63ce7d9a4d7e8f8eaaf08417c78f" style="width: 100.0%; height: 100.0%;"><b>Temps d'observation : 2014-6-15 12:55</b></br> <b>Station : LIPL</b></br> <b>lon : 10.28</b></br> <b>lat : 45.42</b></br> <b>Température (fahrenheit) : 75.2</b></br>                          <b>Humidité relative (%) : 46.98</b></br> <b>Direction du vent : 90.0</b></br> <b>Vitesse du vent (mille marin) : 12.0</b></br> <b>Visibilité (mile) : 6.21</b></br></div>`)[0];
+            popup_a5141700f1974f0aa419a6fb0167ae5c.setContent(html_80ab63ce7d9a4d7e8f8eaaf08417c78f);
+        
+
+        marker_d6d912747acb456bac7faf06c5c70816.bindPopup(popup_a5141700f1974f0aa419a6fb0167ae5c)
+        ;
+
+        
+    
+    
+            var marker_14bc93e62da444079e315ece4385c3f0 = L.marker(
+                [45.68389892578125, 12.10669994354248],
+                {}
+            ).addTo(map_1db2f860f73e4b92b72aa94c919d97b2);
+        
+    
+        var popup_bd1138ec937d4a1a97c3a0867456ea11 = L.popup({"maxWidth": 2650});
+
+        
+            var html_4e57b93c5a6a4458bd2bc6b8fcc6eb3c = $(`<div id="html_4e57b93c5a6a4458bd2bc6b8fcc6eb3c" style="width: 100.0%; height: 100.0%;"><b>Temps d'observation : 2014-6-15 12:55</b></br> <b>Station : LIPS</b></br> <b>lon : 12.11</b></br> <b>lat : 45.68</b></br> <b>Température (fahrenheit) : 75.2</b></br>                          <b>Humidité relative (%) : 33.57</b></br> <b>Direction du vent : 90.0</b></br> <b>Vitesse du vent (mille marin) : 6.0</b></br> <b>Visibilité (mile) : 6.21</b></br></div>`)[0];
+            popup_bd1138ec937d4a1a97c3a0867456ea11.setContent(html_4e57b93c5a6a4458bd2bc6b8fcc6eb3c);
+        
+
+        marker_14bc93e62da444079e315ece4385c3f0.bindPopup(popup_bd1138ec937d4a1a97c3a0867456ea11)
+        ;
+
+        
+    
+    
+            var marker_bd51a54ee5104a659bb7f9a68e5ddde0 = L.marker(
+                [42.38690185546875, 11.169699668884277],
+                {}
+            ).addTo(map_1db2f860f73e4b92b72aa94c919d97b2);
+        
+    
+        var popup_fa8a54b10b8f44e9a3d57a2225a6ec10 = L.popup({"maxWidth": 2650});
+
+        
+            var html_3cf6e67428b94d289dfc7909c9b4f2b6 = $(`<div id="html_3cf6e67428b94d289dfc7909c9b4f2b6" style="width: 100.0%; height: 100.0%;"><b>Temps d'observation : 2014-6-15 12:55</b></br> <b>Station : LIQO</b></br> <b>lon : 11.17</b></br> <b>lat : 42.39</b></br> <b>Température (fahrenheit) : 62.6</b></br>                          <b>Humidité relative (%) : 93.83</b></br> <b>Direction du vent : 50.0</b></br> <b>Vitesse du vent (mille marin) : 7.0</b></br> <b>Visibilité (mile) : 0.0</b></br></div>`)[0];
+            popup_fa8a54b10b8f44e9a3d57a2225a6ec10.setContent(html_3cf6e67428b94d289dfc7909c9b4f2b6);
+        
+
+        marker_bd51a54ee5104a659bb7f9a68e5ddde0.bindPopup(popup_fa8a54b10b8f44e9a3d57a2225a6ec10)
+        ;
+
+        
+    
+    
+            var marker_039493f9747c41988ac20377560d78a7 = L.marker(
+                [41.65449905395508, 12.445199966430664],
+                {}
+            ).addTo(map_1db2f860f73e4b92b72aa94c919d97b2);
+        
+    
+        var popup_4d168a02a3324590bc88a30f2423427e = L.popup({"maxWidth": 2650});
+
+        
+            var html_9f7695b54ae04e42950f9200b79f82fb = $(`<div id="html_9f7695b54ae04e42950f9200b79f82fb" style="width: 100.0%; height: 100.0%;"><b>Temps d'observation : 2014-6-15 12:55</b></br> <b>Station : LIRE</b></br> <b>lon : 12.45</b></br> <b>lat : 41.65</b></br> <b>Température (fahrenheit) : 77.0</b></br>                          <b>Humidité relative (%) : 73.78</b></br> <b>Direction du vent : 60.0</b></br> <b>Vitesse du vent (mille marin) : 11.0</b></br> <b>Visibilité (mile) : 6.21</b></br></div>`)[0];
+            popup_4d168a02a3324590bc88a30f2423427e.setContent(html_9f7695b54ae04e42950f9200b79f82fb);
+        
+
+        marker_039493f9747c41988ac20377560d78a7.bindPopup(popup_4d168a02a3324590bc88a30f2423427e)
+        ;
+
+        
+    
+    
+            var marker_c68474943104476bae354b086f0be8c7 = L.marker(
+                [41.64500045776367, 13.299400329589844],
+                {}
+            ).addTo(map_1db2f860f73e4b92b72aa94c919d97b2);
+        
+    
+        var popup_e26e5522ee02479ab0614ed113c6fbbc = L.popup({"maxWidth": 2650});
+
+        
+            var html_cca22f4c9cac478aa91058d797904f32 = $(`<div id="html_cca22f4c9cac478aa91058d797904f32" style="width: 100.0%; height: 100.0%;"><b>Temps d'observation : 2014-6-15 12:55</b></br> <b>Station : LIRH</b></br> <b>lon : 13.3</b></br> <b>lat : 41.65</b></br> <b>Température (fahrenheit) : 64.4</b></br>                          <b>Humidité relative (%) : 88.09</b></br> <b>Direction du vent : 250.0</b></br> <b>Vitesse du vent (mille marin) : 7.0</b></br> <b>Visibilité (mile) : 3.73</b></br></div>`)[0];
+            popup_e26e5522ee02479ab0614ed113c6fbbc.setContent(html_cca22f4c9cac478aa91058d797904f32);
+        
+
+        marker_c68474943104476bae354b086f0be8c7.bindPopup(popup_e26e5522ee02479ab0614ed113c6fbbc)
+        ;
+
+        
+    
+    
+            var marker_f2bc93dc710b4a1a96f81edd6e2505e2 = L.marker(
+                [41.545799255371094, 12.909700393676758],
+                {}
+            ).addTo(map_1db2f860f73e4b92b72aa94c919d97b2);
+        
+    
+        var popup_1a56db7f81104838ba6084d0746dd098 = L.popup({"maxWidth": 2650});
+
+        
+            var html_9fbbf6ffc49542d48f41a099fbd82567 = $(`<div id="html_9fbbf6ffc49542d48f41a099fbd82567" style="width: 100.0%; height: 100.0%;"><b>Temps d'observation : 2014-6-15 12:55</b></br> <b>Station : LIRL</b></br> <b>lon : 12.91</b></br> <b>lat : 41.55</b></br> <b>Température (fahrenheit) : 71.6</b></br>                          <b>Humidité relative (%) : 88.43</b></br> <b>Direction du vent : 30.0</b></br> <b>Vitesse du vent (mille marin) : 4.0</b></br> <b>Visibilité (mile) : 6.21</b></br></div>`)[0];
+            popup_1a56db7f81104838ba6084d0746dd098.setContent(html_9fbbf6ffc49542d48f41a099fbd82567);
+        
+
+        marker_f2bc93dc710b4a1a96f81edd6e2505e2.bindPopup(popup_1a56db7f81104838ba6084d0746dd098)
+        ;
+
+        
+    
+    
+            var marker_8bc7374b227545d798144e1374ac2996 = L.marker(
+                [41.06060028076172, 14.078900337219238],
+                {}
+            ).addTo(map_1db2f860f73e4b92b72aa94c919d97b2);
+        
+    
+        var popup_b87ae934d0d04ae79c1589f9c2f7d9f2 = L.popup({"maxWidth": 2650});
+
+        
+            var html_f995729d6d7e4997ab96092b6dff3ee9 = $(`<div id="html_f995729d6d7e4997ab96092b6dff3ee9" style="width: 100.0%; height: 100.0%;"><b>Temps d'observation : 2014-6-15 12:55</b></br> <b>Station : LIRM</b></br> <b>lon : 14.08</b></br> <b>lat : 41.06</b></br> <b>Température (fahrenheit) : 84.2</b></br>                          <b>Humidité relative (%) : 79.04</b></br> <b>Direction du vent : 220.0</b></br> <b>Vitesse du vent (mille marin) : 12.0</b></br> <b>Visibilité (mile) : 6.21</b></br></div>`)[0];
+            popup_b87ae934d0d04ae79c1589f9c2f7d9f2.setContent(html_f995729d6d7e4997ab96092b6dff3ee9);
+        
+
+        marker_8bc7374b227545d798144e1374ac2996.bindPopup(popup_b87ae934d0d04ae79c1589f9c2f7d9f2)
+        ;
+
+        
+    
+    
+            var marker_b69ae625969846fdb164719309e400c6 = L.marker(
+                [42.43830108642578, 12.055000305175781],
+                {}
+            ).addTo(map_1db2f860f73e4b92b72aa94c919d97b2);
+        
+    
+        var popup_ba43265f94104b6eaacb3007d8e5f101 = L.popup({"maxWidth": 2650});
+
+        
+            var html_a1640838ea464b59810e91af327d55a1 = $(`<div id="html_a1640838ea464b59810e91af327d55a1" style="width: 100.0%; height: 100.0%;"><b>Temps d'observation : 2014-6-15 12:55</b></br> <b>Station : LIRV</b></br> <b>lon : 12.06</b></br> <b>lat : 42.44</b></br> <b>Température (fahrenheit) : 68.0</b></br>                          <b>Humidité relative (%) : 77.75</b></br> <b>Direction du vent : 40.0</b></br> <b>Vitesse du vent (mille marin) : 12.0</b></br> <b>Visibilité (mile) : 6.21</b></br></div>`)[0];
+            popup_ba43265f94104b6eaacb3007d8e5f101.setContent(html_a1640838ea464b59810e91af327d55a1);
+        
+
+        marker_b69ae625969846fdb164719309e400c6.bindPopup(popup_ba43265f94104b6eaacb3007d8e5f101)
+        ;
+
+        
+    
+    
+            var marker_6969881553d84556aa38dfab89af085a = L.marker(
+                [42.72999954223633, 10.380000114440918],
+                {}
+            ).addTo(map_1db2f860f73e4b92b72aa94c919d97b2);
+        
+    
+        var popup_f974bd2b26c24cac864ec1a7695b0c42 = L.popup({"maxWidth": 2650});
+
+        
+            var html_01e2abbe6fd64352a75d9b0a06b918b8 = $(`<div id="html_01e2abbe6fd64352a75d9b0a06b918b8" style="width: 100.0%; height: 100.0%;"><b>Temps d'observation : 2014-6-15 12:55</b></br> <b>Station : LIRX</b></br> <b>lon : 10.38</b></br> <b>lat : 42.73</b></br> <b>Température (fahrenheit) : 64.4</b></br>                          <b>Humidité relative (%) : 88.09</b></br> <b>Direction du vent : 110.0</b></br> <b>Vitesse du vent (mille marin) : 3.0</b></br> <b>Visibilité (mile) : 6.21</b></br></div>`)[0];
+            popup_f974bd2b26c24cac864ec1a7695b0c42.setContent(html_01e2abbe6fd64352a75d9b0a06b918b8);
+        
+
+        marker_6969881553d84556aa38dfab89af085a.bindPopup(popup_f974bd2b26c24cac864ec1a7695b0c42)
+        ;
+
+        
+    
+    
+            var marker_b7b020a468bc465f968d1242045aaf46 = L.marker(
+                [44.193599700927734, 10.699999809265137],
+                {}
+            ).addTo(map_1db2f860f73e4b92b72aa94c919d97b2);
+        
+    
+        var popup_b3de8ba8ec9b40cb9a84cb219ccf2e44 = L.popup({"maxWidth": 2650});
+
+        
+            var html_5273e352106640e4956a6defee5a3e2a = $(`<div id="html_5273e352106640e4956a6defee5a3e2a" style="width: 100.0%; height: 100.0%;"><b>Temps d'observation : 2014-6-15 12:55</b></br> <b>Station : LIVC</b></br> <b>lon : 10.7</b></br> <b>lat : 44.19</b></br> <b>Température (fahrenheit) : 41.0</b></br>                          <b>Humidité relative (%) : 100.0</b></br> <b>Direction du vent : 10.0</b></br> <b>Vitesse du vent (mille marin) : 40.0</b></br> <b>Visibilité (mile) : 0.0</b></br></div>`)[0];
+            popup_b3de8ba8ec9b40cb9a84cb219ccf2e44.setContent(html_5273e352106640e4956a6defee5a3e2a);
+        
+
+        marker_b7b020a468bc465f968d1242045aaf46.bindPopup(popup_b3de8ba8ec9b40cb9a84cb219ccf2e44)
+        ;
+
+        
+    
+    
+            var marker_d3c6e1d5da28426ab2eef1dcfc8a7979 = L.marker(
+                [46.72999954223633, 12.220000267028809],
+                {}
+            ).addTo(map_1db2f860f73e4b92b72aa94c919d97b2);
+        
+    
+        var popup_9da6a05ee3cf4e45ac04fea26bd58d59 = L.popup({"maxWidth": 2650});
+
+        
+            var html_9dbdc275ce55469d88d62f6b57673447 = $(`<div id="html_9dbdc275ce55469d88d62f6b57673447" style="width: 100.0%; height: 100.0%;"><b>Temps d'observation : 2014-6-15 12:55</b></br> <b>Station : LIVD</b></br> <b>lon : 12.22</b></br> <b>lat : 46.73</b></br> <b>Température (fahrenheit) : 64.4</b></br>                          <b>Humidité relative (%) : 55.63</b></br> <b>Direction du vent : 90.0</b></br> <b>Vitesse du vent (mille marin) : 7.0</b></br> <b>Visibilité (mile) : 6.21</b></br></div>`)[0];
+            popup_9da6a05ee3cf4e45ac04fea26bd58d59.setContent(html_9dbdc275ce55469d88d62f6b57673447);
+        
+
+        marker_d3c6e1d5da28426ab2eef1dcfc8a7979.bindPopup(popup_9da6a05ee3cf4e45ac04fea26bd58d59)
+        ;
+
+        
+    
+    
+            var marker_53ebbe7454444361aa3752c9847ecd81 = L.marker(
+                [46.83330154418945, 10.5],
+                {}
+            ).addTo(map_1db2f860f73e4b92b72aa94c919d97b2);
+        
+    
+        var popup_d017631304d1445e9a2345846b9d11aa = L.popup({"maxWidth": 2650});
+
+        
+            var html_e68071968b034360b9923e675316eff2 = $(`<div id="html_e68071968b034360b9923e675316eff2" style="width: 100.0%; height: 100.0%;"><b>Temps d'observation : 2014-6-15 12:55</b></br> <b>Station : LIVE</b></br> <b>lon : 10.5</b></br> <b>lat : 46.83</b></br> <b>Température (fahrenheit) : 57.2</b></br>                          <b>Humidité relative (%) : 67.12</b></br> <b>Direction du vent : 190.0</b></br> <b>Vitesse du vent (mille marin) : 7.0</b></br> <b>Visibilité (mile) : 6.21</b></br></div>`)[0];
+            popup_d017631304d1445e9a2345846b9d11aa.setContent(html_e68071968b034360b9923e675316eff2);
+        
+
+        marker_53ebbe7454444361aa3752c9847ecd81.bindPopup(popup_d017631304d1445e9a2345846b9d11aa)
+        ;
+
+        
+    
+    
+            var marker_a6f5810143d0403689e5969fa0c28b1f = L.marker(
+                [46.50559997558594, 13.586099624633789],
+                {}
+            ).addTo(map_1db2f860f73e4b92b72aa94c919d97b2);
+        
+    
+        var popup_c0be72a824cf484496b0b4f0c4f5dc75 = L.popup({"maxWidth": 2650});
+
+        
+            var html_615a65c3f1eb471aaa4272defd825583 = $(`<div id="html_615a65c3f1eb471aaa4272defd825583" style="width: 100.0%; height: 100.0%;"><b>Temps d'observation : 2014-6-15 12:55</b></br> <b>Station : LIVO</b></br> <b>lon : 13.59</b></br> <b>lat : 46.51</b></br> <b>Température (fahrenheit) : 66.2</b></br>                          <b>Humidité relative (%) : 48.83</b></br> <b>Direction du vent : 110.0</b></br> <b>Vitesse du vent (mille marin) : 5.0</b></br> <b>Visibilité (mile) : 6.21</b></br></div>`)[0];
+            popup_c0be72a824cf484496b0b4f0c4f5dc75.setContent(html_615a65c3f1eb471aaa4272defd825583);
+        
+
+        marker_a6f5810143d0403689e5969fa0c28b1f.bindPopup(popup_c0be72a824cf484496b0b4f0c4f5dc75)
+        ;
+
+        
+    
+    
+            var marker_f0ac0f80d1254c09b2e592b4f704098a = L.marker(
+                [46.14339828491211, 11.037599563598633],
+                {}
+            ).addTo(map_1db2f860f73e4b92b72aa94c919d97b2);
+        
+    
+        var popup_dc50ec8497324bb3a2ce5e32d183f57d = L.popup({"maxWidth": 2650});
+
+        
+            var html_b6eaccb77b464297bffefe0d013de4e5 = $(`<div id="html_b6eaccb77b464297bffefe0d013de4e5" style="width: 100.0%; height: 100.0%;"><b>Temps d'observation : 2014-6-15 12:55</b></br> <b>Station : LIVP</b></br> <b>lon : 11.04</b></br> <b>lat : 46.14</b></br> <b>Température (fahrenheit) : 46.4</b></br>                          <b>Humidité relative (%) : 81.34</b></br> <b>Direction du vent : 220.0</b></br> <b>Vitesse du vent (mille marin) : 6.0</b></br> <b>Visibilité (mile) : 6.21</b></br></div>`)[0];
+            popup_dc50ec8497324bb3a2ce5e32d183f57d.setContent(html_b6eaccb77b464297bffefe0d013de4e5);
+        
+
+        marker_f0ac0f80d1254c09b2e592b4f704098a.bindPopup(popup_dc50ec8497324bb3a2ce5e32d183f57d)
+        ;
+
+        
+    
+    
+            var marker_921f575c0fa040ee96eb60dd4aeb0de0 = L.marker(
+                [46.29779815673828, 11.786700248718262],
+                {}
+            ).addTo(map_1db2f860f73e4b92b72aa94c919d97b2);
+        
+    
+        var popup_9cd72c51f7e64135a4fdfec02e4d5fd9 = L.popup({"maxWidth": 2650});
+
+        
+            var html_1eb06af8ea0b4d4c8dbba04010e40a9d = $(`<div id="html_1eb06af8ea0b4d4c8dbba04010e40a9d" style="width: 100.0%; height: 100.0%;"><b>Temps d'observation : 2014-6-15 12:55</b></br> <b>Station : LIVR</b></br> <b>lon : 11.79</b></br> <b>lat : 46.3</b></br> <b>Température (fahrenheit) : 44.6</b></br>                          <b>Humidité relative (%) : 81.2</b></br> <b>Direction du vent : 170.0</b></br> <b>Vitesse du vent (mille marin) : 4.0</b></br> <b>Visibilité (mile) : 3.11</b></br></div>`)[0];
+            popup_9cd72c51f7e64135a4fdfec02e4d5fd9.setContent(html_1eb06af8ea0b4d4c8dbba04010e40a9d);
+        
+
+        marker_921f575c0fa040ee96eb60dd4aeb0de0.bindPopup(popup_9cd72c51f7e64135a4fdfec02e4d5fd9)
+        ;
+
+        
+    
+    
+            var marker_4f5f613a9b674236919d4a5caeed168a = L.marker(
+                [45.676700592041016, 13.753800392150879],
+                {}
+            ).addTo(map_1db2f860f73e4b92b72aa94c919d97b2);
+        
+    
+        var popup_efca5977e44d4346b4c7baaf3140dcba = L.popup({"maxWidth": 2650});
+
+        
+            var html_564052ad3469440aac89ce4d0adebf1c = $(`<div id="html_564052ad3469440aac89ce4d0adebf1c" style="width: 100.0%; height: 100.0%;"><b>Temps d'observation : 2014-6-15 12:55</b></br> <b>Station : LIVT</b></br> <b>lon : 13.75</b></br> <b>lat : 45.68</b></br> <b>Température (fahrenheit) : 78.8</b></br>                          <b>Humidité relative (%) : 34.13</b></br> <b>Direction du vent : 70.0</b></br> <b>Vitesse du vent (mille marin) : 6.0</b></br> <b>Visibilité (mile) : 6.21</b></br></div>`)[0];
+            popup_efca5977e44d4346b4c7baaf3140dcba.setContent(html_564052ad3469440aac89ce4d0adebf1c);
+        
+
+        marker_4f5f613a9b674236919d4a5caeed168a.bindPopup(popup_efca5977e44d4346b4c7baaf3140dcba)
+        ;
+
+        
+    
+    
+            var marker_5fec4b7a4b1c44d7acb90a47c6ff3510 = L.marker(
+                [33.33000183105469, 44.444000244140625],
+                {}
+            ).addTo(map_1db2f860f73e4b92b72aa94c919d97b2);
+        
+    
+        var popup_29df9651ace74c82841127a625450299 = L.popup({"maxWidth": 2650});
+
+        
+            var html_60efef5eed8b4becb77d3f9c08e26b71 = $(`<div id="html_60efef5eed8b4becb77d3f9c08e26b71" style="width: 100.0%; height: 100.0%;"><b>Temps d'observation : 2014-6-15 12:55</b></br> <b>Station : QLQ</b></br> <b>lon : 44.44</b></br> <b>lat : 33.33</b></br> <b>Température (fahrenheit) : 83.48</b></br>                          <b>Humidité relative (%) : 25.23</b></br> <b>Direction du vent : 190.0</b></br> <b>Vitesse du vent (mille marin) : 11.0</b></br> <b>Visibilité (mile) : 6.21</b></br></div>`)[0];
+            popup_29df9651ace74c82841127a625450299.setContent(html_60efef5eed8b4becb77d3f9c08e26b71);
+        
+
+        marker_5fec4b7a4b1c44d7acb90a47c6ff3510.bindPopup(popup_29df9651ace74c82841127a625450299)
+        ;
+
+        
+    
+</script>
